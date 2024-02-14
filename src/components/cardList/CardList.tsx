@@ -3,13 +3,13 @@ import { IDataProps } from "@/interfaces/IDataProps";
 import { IEmployee } from "@/interfaces/IEmployee";
 import Card from "../card";
 
-const CardList = ({ data }: IDataProps) => {
+const CardList = ({ employees }: IDataProps) => {
 
   return (
     <section className={styles.CardList}>
       <div className={styles.CardList__container}>
-        {data?.map((item: IEmployee) => (
-          <Card data={item} key={item.id} />
+        {employees?.map((employee: IEmployee) => (
+          <Card data={employee} key={employee.id} />
         ))}
       </div>
     </section>

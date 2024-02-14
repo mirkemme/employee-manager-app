@@ -1,0 +1,35 @@
+.Header {
+  width: 100%;
+  max-width: 1400px;
+  height: 60px;
+  padding: $paddingSmall $paddingExtraLarge;
+  display: flex;
+  justify-content: space-between;
+  gap: rem(20px);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  background-color: $background-primary;
+  color: $text-primary;
+
+  &__addEmployee {
+    cursor: pointer;
+    transition: all 0.25s ease;
+    text-align: right;
+
+    &:hover {
+      color: colorShade(white, $btn-main, 40%);
+    }
+  }
+}
+
+// small-mobile
+@media screen and (max-width: 426px) {
+  .Header {
+    h3 {
+      font-size: rem(18px);
+    }
+  }
+}

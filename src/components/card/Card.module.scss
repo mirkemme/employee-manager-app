@@ -1,16 +1,19 @@
 .Card {
   width: rem(300px);
-  height: rem(300px);
-  border: 1px solid red;
+  height: rem(350px);
+  border: 1px solid lightgrey;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   position: relative;
   gap: 5px;
   padding: $paddingMedium;
-  background-color: $background-primary;
+  background-color: $card-background;
   border-radius: $roundedExtraSmall;
 
-  &__name {
+  &__text {
+    padding: $paddingExtraSmall 0;
+    border-bottom: 1px solid lightgrey;
     color: $text-primary;
   }
 
@@ -18,13 +21,33 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: 1px solid blue;
-    background-color: lightblue;
+    border: 1px solid rgb(196, 196, 196);
+    background-color: rgb(186, 233, 248);
     overflow: hidden;
 
     img {
       width: 100%;
       height: 100%;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: rem(6px);
+
+    button {
+      color: $text-tertiary;
+      padding: $paddingExtraSmall;
+      border-radius: rem(4px);
+    }
+
+    &__editBtn {
+      background-color: $btn-bg-primary;
+    }
+
+    &__deleteBtn {
+      background-color: $btn-bg-secondary;
     }
   }
 }

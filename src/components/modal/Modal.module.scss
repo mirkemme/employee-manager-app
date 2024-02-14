@@ -1,0 +1,20 @@
+.Modal {
+  width: rem(400px);
+  height: rem(500px);
+  padding: $paddingSmall;
+  position: fixed;
+  top: rem(70px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $background-primary;
+  border-radius: rem(5px);
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+
+  &__isOpen {
+    opacity: 1;
+    visibility: visible;
+  }
+}
