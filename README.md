@@ -1,40 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Gestione Clienti - Front-end
 
-## Getting Started
+### Descrizione del programma
 
-First, run the development server:
+Employee Manager è un'applicazione front-end responsive per gestire i dati dei dipendenti
+attraverso l'interfaccia utente. L'applicazione front-end si connette al back-end
+attraverso le chiamate API definite nel repository
+https://github.com/mirkemme/employee-manager.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Tecnologie Utilizzate
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- React
+- Next.js
+- TypeScript
+- SASS
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Funzionalità principali
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- Rendering delle Card dei dipendenti con i relativi dati.
+- Implementazione delle chiamate API GET, POST, PUT e DELETE per la gestione delle Card.
+- Gestione dello stato globale utilizzando useContext e useReducer.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Utilizzo
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Per utilizzare l'applicazione:
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clonare il repository del progetto back-end presente in questa repo
+   https://github.com/mirkemme/employee-manager.
+2. Assicurarsi di avere Node.js installato nel proprio sistema.
+3. Clonare il repository del progetto front-end: Employee Manager Front-end.
+4. Installare le dipendenze con il comando npm install.
+5. Avviare l'applicazione con il comando npm run dev.
+6. Accedere all'applicazione tramite il browser all'indirizzo http://localhost:3000.
