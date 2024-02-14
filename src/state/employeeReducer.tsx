@@ -1,23 +1,13 @@
-import { IEmployee } from "@/interfaces/IEmployee";
-
-interface EmployeeState {
-    loading: boolean;
-    data: IEmployee[];
-    error: string | null;
-  }
+import { IEmployeeState } from "@/interfaces/IState";
+import { EmployeeActionType } from "@/utils/types/types";
   
-  type EmployeeAction =
-    | { type: 'FETCH_REQUEST' }
-    | { type: 'FETCH_SUCCESS'; payload: IEmployee[] }
-    | { type: 'FETCH_FAILURE'; payload: string };
-  
-  const initialState: EmployeeState = {
+  const initialState: IEmployeeState = {
     loading: false,
     data: [],
     error: null,
   };
   
-  const employeeReducer = (state: EmployeeState, action: EmployeeAction): EmployeeState => {
+  const employeeReducer = (state: IEmployeeState, action: EmployeeActionType): IEmployeeState => {
     switch (action.type) {
       case 'FETCH_REQUEST':
         return { ...state, loading: true, error: null };
